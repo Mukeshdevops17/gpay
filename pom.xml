@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jbundle.util.webapp</groupId>
+    <artifactId>jbundle-util-webapp-parent</artifactId>
+    <version>0.7.2</version>
+  </parent>
+
+  <groupId>icici</groupId>
+  <artifactId>gpay</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <packaging>war</packaging>	<!-- NOTE Should add companion war pom with sample web.xml file -->
+  <name>jbundle-util-webapp-redirect (redirect servlet)</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <attachClasses>true</attachClasses>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
